@@ -21,7 +21,10 @@ nav_bar = html.Nav([
                 html.Li([html.A('Home', href='/Home')]),
                 html.Li([html.A('DIY', href='/DIY')]),
                 html.Li([html.A('WebCam', href='/WebCam')]),
-                html.Li([html.A('About', href='/About')])
+                html.Li([html.A('About', href='/About')]),
+                html.Li([html.A([
+                    html.I(className="fa fa-github")
+                ], href='https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/')])
             ], className="nav navbar-nav navbar-right")
         ], className="collapse navbar-collapse", id="myNavbar")
     ], className="container")
@@ -61,39 +64,7 @@ carousel = html.Div([
     ], className="right carousel-control", href="#myCarousel", role="button", **{'data-slide': 'next'})
 ], className="carousel slide", id="myCarousel", **{'data-ride': 'carousel'})
 
-## homepage introduction
-homepage_intro = html.Div([
-    html.Div([
-        html.Div([
-            html.H3('DIY'),
-            html.P('Lorem ipsum dolor sit amet, consectetur adipisicing elit...')
-        ], className="col-sm-4"),
-        html.Div([
-            html.H3('WebCam'),
-            html.P('Lorem ipsum dolor sit amet, consectetur adipisicing elit...')
-        ], className="col-sm-4"),
-        html.Div([
-            html.H3('About'),
-            html.P('Lorem ipsum dolor sit amet, consectetur adipisicing elit...')
-        ], className="col-sm-4")            
-    ], className="row")
-], className="container")
-
-footer = html.Footer([
-    html.A([
-        html.Span(className="glyphicon glyphicon-chevron-up")
-    ], href="#myPage", title="To Top"),
-    html.P([
-        'GR5242 Final Project'
-    ]),
-    html.A([
-        html.I(className="fa fa-github")
-    ], href='https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/')   
-], className="container-fluid text-center")
-
 layout = html.Div([
     nav_bar,
-    carousel,
-    homepage_intro,
-    footer
+    carousel
 ])

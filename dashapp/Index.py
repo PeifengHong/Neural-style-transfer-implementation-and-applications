@@ -5,9 +5,9 @@ from dash.dependencies import Input, Output
 #Eager Mode
 import tensorflow as tf
 tf.enable_eager_execution()   
-import tensorflow.contrib.eager as tfe
 
 from App import app
+
 import Home, DIY, WebCam, About
 
 app.layout = html.Div([

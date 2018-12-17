@@ -1,6 +1,5 @@
-import datetime
 import dash
-from dash.dependencies import Input, Output, State
+from dash.dependencies import Input, Output
 import dash_core_components as dcc
 import dash_html_components as html
 
@@ -8,6 +7,8 @@ from App import app
 import base64
 import io
 import cv2
+
+app.scripts.config.serve_locally = True
 
 ## nav bar
 nav_bar = html.Nav([
@@ -25,7 +26,10 @@ nav_bar = html.Nav([
                 html.Li([html.A('Home', href='/Home')]),
                 html.Li([html.A('DIY', href='/DIY')]),
                 html.Li([html.A('WebCam', href='/WebCam')]),
-                html.Li([html.A('About', href='/About')])
+                html.Li([html.A('About', href='/About')]),
+                html.Li([html.A([
+                    html.I(className="fa fa-github")
+                ], href='https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/')])
             ], className="nav navbar-nav navbar-right")
         ], className="collapse navbar-collapse", id="myNavbar")
     ], className="container")
@@ -36,12 +40,8 @@ upload_img = html.Div([
     html.Br(),
     html.H1('Style Transfer An Image'),
     html.P('Use Deep Learning to Automatically Style Tranfer An Image'),
-    html.Div(
-        className="app-upload", 
-        children=[
-            html.Div(
-                className="upload-button",
-                children=[
+    html.Div([
+            html.Div([
                 dcc.Upload(
                     id='upload-image',
                     children=html.Div([
@@ -56,13 +56,16 @@ upload_img = html.Div([
                         'borderStyle': 'dashed',
                         'borderRadius': '5px',
                         'textAlign': 'center',
-                        'margin': '10px'
+                        'margin': '0 auto'
                     },
                     multiple=True
                 ),
+                html.Br(),
                 html.Div(id='output-image-upload'),
             ]),  
-    ])
+    ], style={
+        'textAlign': 'center',
+    })
 ], className="jumbotron text-center")
 
 def parse_contents(contents):
@@ -78,10 +81,10 @@ def parse_contents(contents):
     encoded_img = base64.b64encode(buff.getvalue()).decode("utf-8")
     HTML_IMG_SRC_PARAMETERS = 'data:image/png;base64, '
     show_img = html.Div([
-            html.Img(src=contents,width="49%"),
-            html.Img(id=f'img-{id}',
-                     src=HTML_IMG_SRC_PARAMETERS + encoded_img, 
-                     width="49%")
+        html.Img(src=contents,width="49%"),
+        html.Img(id=f'img-{id}',
+                 src=HTML_IMG_SRC_PARAMETERS + encoded_img, 
+                 width="49%")
     ])
     return show_img
 
@@ -90,8 +93,8 @@ def parse_contents(contents):
 
 def update_output(contents):
     if contents is not None:
-        output_children = [parse_contents(contents[0])]
-    return output_children   
+        children = [parse_contents(contents[0])]
+        return children
 
 import tensorflow as tf
 import tensorflow.contrib.eager as tfe

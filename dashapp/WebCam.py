@@ -228,11 +228,15 @@ nav_bar = html.Nav([
                 html.Li([html.A('Home', href='/Home')]),
                 html.Li([html.A('DIY', href='/DIY')]),
                 html.Li([html.A('WebCam', href='/WebCam')]),
-                html.Li([html.A('About', href='/About')])
+                html.Li([html.A('About', href='/About')]),
+                html.Li([html.A([
+                    html.I(className="fa fa-github")
+                ], href='https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/')])
             ], className="nav navbar-nav navbar-right")
         ], className="collapse navbar-collapse", id="myNavbar")
     ], className="container")
 ], className="navbar navbar-default navbar-fixed-top")
+
 
 
 transform_net1=load_model('style1')
@@ -243,17 +247,23 @@ all_options = ['Starry Night Over the Rhône', 'Victoire', 'Women at Their Toile
 
 layout = html.Div([
     nav_bar,
-    html.H1('This is WebCame page.'),
+    html.Br(),
+    html.H1('Enjoy WebCam Time'),
+    html.Br(),
+    html.Div([
+        html.Img(src=app.get_asset_url('Starry Night Over the Rhône.jpg'), width="33%", height="300px"),
+        html.Img(src=app.get_asset_url('Victoire.jpg'), width="33%", height="300px"),
+        html.Img(src=app.get_asset_url('Women at Their Toilette.jpg'), width="33%", height="300px")
+    ]),
     dcc.RadioItems(
         id='style-select',
         options=[{'label': k, 'value': k} for k in all_options],
-        value='Starry Night Over the Rhône'
-    ),	
+        value='Starry Night Over the Rhône',
+        style={"padding":"10px"}
+    ),
     html.Div(id='Webcam-Display'),
     html.Div(id='show-style'),
-    # html.H3('starry night style camera'),
-    # html.Img(src=app.get_asset_url('starry_night.jpg'), width="25%"),
-	html.Br(),
-    html.Button(id='Start-webcam',n_clicks=0,children='Start',style={'textAlign': 'center','height':'30px','width':'100%','backgroundcolor':'#F9E79F'}),
-    html.H3('Press Q to quit.'),
-])
+    html.Br(),
+    html.Button(id='Start-webcam',n_clicks=0, children='Start', style={'textAlign': 'center','height':'30px','width':'20%','backgroundcolor':'#F9E79F'}),
+    html.H3('Press Q to quit.')   
+], className="jumbotron text-center")
