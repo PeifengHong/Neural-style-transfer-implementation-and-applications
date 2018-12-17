@@ -43,7 +43,13 @@ Term: Fall 2018
 > - If you want to reproduce the result of [Victoire](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/data/victoire.jpg), you have to replace `beta_model_style_1.h5` with  `beta_model_style_2.h5` everywhere in step 5. 
 > - If you want to reproduce the result of [Women at Their Toilette](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/data/Women_at_Their_%20Toilette.jpg), you have to replace `beta_model_style_1.h5` with  `beta_model_style_3.h5` everywhere in step 5. 
 > - If you want to reproduce the result of [Google Map](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/data/google_map.jpg), you have to replace `beta_model_style_1.h5` with  `beta_model_style_4.h5` everywhere in step 5. 
-* Dash app demo:  
+* Dash app demo:  Dash app is an interactive web application developed by python. To make use of our app, 
+> - Make sure your system has all the required package.
+> - Open terminal or command line and run following command: `python Index.py`
+> - Home page shows some result of our work, including the starry night style Butler library.
+  > - Click the DIY bar of menu, and then upload your image to see the style
+  > - Click the WebCam bar of menu, and then select one of the three painting, then click start button to see the live video. Press Q to       quit the camera. You can try all of the three styles.
+  > - About page is the information of our team members.
 
 
 
