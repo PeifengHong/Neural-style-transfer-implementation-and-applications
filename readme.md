@@ -14,7 +14,8 @@ Term: Fall 2018
 - Project summary: In this project, we did three things. Firstly, we implemented two style transfer algorithms: the original 1 to 1 neural style transfer algorithm (fixed style for a certain image) that was came up with by [Gatys](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/papers/A%20Neural%20Algorithm%20of%20Artistic%20Style.pdf) and fast neural style transfer algorithm (fixed style for arbitrary image) that was proposed by [Johnson](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/papers/Perceptual%20Losses%20for%20Real-Time%20Style%20Transfer%20and%20Super-Resolution.pdf). Secondly, we applied the fast algorithm in real-time off a webcam. Lastly, we are built an app demo so that users could upload their own images and design their own styled photos. 
 
   ![starry_butler](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/outputs/starry_bulter_alpha_model.png)
-
+  ![webcam](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/figs/webcam_demo.png)
+  ![app demo](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/figs/page_demo.jpg)
 - Project report: 
 
 - Project environment: We implemented our code by using **TensorFlow eager execution** which is an imperative programming environment that evaluates operations immediately, without building graphs. Eager execution would be default in TensorFlow 2.0, so we use this mode to implement our code. 
