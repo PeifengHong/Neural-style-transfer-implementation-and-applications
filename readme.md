@@ -47,9 +47,9 @@ Term: Fall 2018
 > - Make sure your system has all the required package.
 > - Open terminal or command line and run following command: `python Index.py`
 > - Home page shows some result of our work, including the starry night style Butler library.
-  > - Click the DIY bar of menu, and then upload your image to see the style
-  > - Click the WebCam bar of menu, and then select one of the three painting, then click start button to see the live video. Press Q to       quit the camera. You can try all of the three styles.
-  > - About page is the information of our team members.
+> > - Click the DIY bar of menu, and then upload your image to see the style
+> > - Click the WebCam bar of menu, and then select one of the three painting, then click start button to see the live video. Press Q to       quit the camera. You can try all of the three styles.
+> > - About page is the information of our team members.
 
 
 
