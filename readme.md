@@ -24,7 +24,7 @@ Term: Fall 2018
 
 
 
-In this repository we provide:
+## In this repository we provide:
 
   - [Notebook](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/lib/style_transfer_alpha_final.ipynb) that implements 1 to 1 neural style transfer based on [Gatys' paper](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/papers/A%20Neural%20Algorithm%20of%20Artistic%20Style.pdf). 
   - [Notebook](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/lib/style_transfer_beta_final.ipynb) that implements fast neural style transfer based on [Johnson' paper](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/papers/Perceptual%20Losses%20for%20Real-Time%20Style%20Transfer%20and%20Super-Resolution.pdf). 
@@ -33,7 +33,7 @@ In this repository we provide:
 
 
 
-How to reproduce our results: 
+## How to reproduce our results: 
 
 * Implementation of 1 to 1 neural style transfer: open `style_transfer_alpha_final.ipynb` and run it. This is an end-to-end notebook which means you do not need to revise anything in order to reproduce our results. (*Note: you could run it without GPU*.)
 * Implementation of fast neural style transfer:  open `style_transfer_beta_final.ipynb` and run it. This is an end-to-end notebook which means you do not need to revise anything in order to reproduce our results.  (*Note: you should run it with GPU and it would take 1 hour or longer to train.*)
@@ -42,8 +42,7 @@ How to reproduce our results:
 
 
 
-
-References:
+## References:
 
 [1]  Leon A Gatys，Alexander S Ecker，Matthias Bethge. A neural algorithm of artistic style[J]. arXiv preprint arXiv:1508.06576, 2015. 
 
