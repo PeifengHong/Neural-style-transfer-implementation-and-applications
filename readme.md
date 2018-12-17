@@ -30,7 +30,7 @@ Term: Fall 2018
   - [Notebook](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/lib/style_transfer_alpha_final.ipynb) that implements 1 to 1 neural style transfer based on [Gatys' paper](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/papers/A%20Neural%20Algorithm%20of%20Artistic%20Style.pdf). 
   - [Notebook](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/lib/style_transfer_beta_final.ipynb) that implements fast neural style transfer based on [Johnson' paper](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/papers/Perceptual%20Losses%20for%20Real-Time%20Style%20Transfer%20and%20Super-Resolution.pdf). 
   - [Notebook](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/lib/webcam_final.ipynb) that applies fast style transfer on webcam. 
-  - Notebook that implements the app demo of style transfer. 
+  - Files that implement the app demo of style transfer. 
 
 
 
