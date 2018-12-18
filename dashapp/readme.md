@@ -13,7 +13,7 @@ Term: Fall 2018
 
 - Project summary: In this project, we did three things. Firstly, we implemented two style transfer algorithms: the original 1 to 1 neural style transfer algorithm (fixed style for a certain image) that was came up with by [Gatys](https://arxiv.org/abs/1508.06576) and fast neural style transfer algorithm (fixed style for arbitrary image) that was proposed by [Johnson](https://arxiv.org/abs/1603.08155). Secondly, we applied the fast algorithm in real-time off a webcam. Lastly, we are built an app demo so that users could upload their own images and design their own styled photos. 
 
-  ![starry_bulter](C:\Users\rolco\Desktop\aml_proj\outputs\starry_bulter_alpha_model.png)
+  ![starry_bulter](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/outputs/starry_bulter_alpha_model.png)
 
 - Project environment: We implemented our code by using **TensorFlow eager execution** which is an imperative programming environment that evaluates operations immediately, without building graphs. Eager execution would be default in TensorFlow 2.0, so we use this mode to implement our code. 
 
@@ -41,16 +41,14 @@ Term: Fall 2018
   * If you want to reproduce the result of *Victoire*, you have to replace `beta_model_style_1.h5` with  `beta_model_style_2.h5` everywhere in step 5. 
   * If you want to reproduce the result of *Women at Their Toilette*, you have to replace `beta_model_style_1.h5` with  `beta_model_style_3.h5` everywhere in step 5. 
   * If you want to reproduce the result of *Google Map*, you have to replace `beta_model_style_1.h5` with  `beta_model_style_4.h5` everywhere in step 5. 
-* Dash app demo:  Dash app is an interactive web application developed by python. Our dash app project contains six python files and an assets folder with images.
-				They are App.py, Home.py, DIY.py, WebCam.py, About.py and Index.py. To make use of our app, 
-				  * Clone the dashapp folder
-				  * Make sure your system has all the required package
-				  * Open terminal or command line and run following command: python Index.py
-				  * Home page shows some result of our work, including the starry night style bulter library.
-				  * Click the DIY bar of menu, and then upload your image to see the transfered image with starry night style
-				  * Click the WebCam bar of menu, and then select one of the three painting, then click start button to see the live video. Press Q to quit the camera.
-				    You can try all of the three styles.
-				  * About page is the information of our team member.
+* Dash app demo:  Dash app is an interactive web application developed by python. Our dash app project contains six python files and an assets folder with images.They are App.py, Home.py, DIY.py, WebCam.py, About.py and Index.py. To make use of our app, 
+> * Clone the dashapp folder
+> * Make sure your system has all the required package
+> * Open terminal or command line and run following command: python Index.py
+> * Home page shows some result of our work, including the starry night style bulter library.
+> > * Click the DIY bar of menu, and then upload your image to see the transfered image with starry night style
+> > * Click the WebCam bar of menu, and then select one of the three painting, then click start button to see the live video. Press Q to quit the camera. You can try all of the three styles.
+> > * About page is the information of our team member.
 
 
 ## References:
