@@ -16,7 +16,7 @@ Term: Fall 2018
   ![starry_butler](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/outputs/starry_bulter_alpha_model.png)
   ![webcam](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/figs/webcam_demo.png)
   ![app demo](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/figs/page_demo.jpg)
-- Project report: 
+- Project report: [report.pdf](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/report.pdf)
 
 - Project environment: We implemented our code by using **TensorFlow eager execution** which is an imperative programming environment that evaluates operations immediately, without building graphs. Eager execution would be default in TensorFlow 2.0, so we use this mode to implement our code. 
 
@@ -30,7 +30,7 @@ Term: Fall 2018
   - [Notebook](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/lib/style_transfer_alpha_final.ipynb) that implements 1 to 1 neural style transfer based on [Gatys' paper](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/papers/A%20Neural%20Algorithm%20of%20Artistic%20Style.pdf). 
   - [Notebook](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/lib/style_transfer_beta_final.ipynb) that implements fast neural style transfer based on [Johnson' paper](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/papers/Perceptual%20Losses%20for%20Real-Time%20Style%20Transfer%20and%20Super-Resolution.pdf). 
   - [Notebook](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/lib/webcam_final.ipynb) that applies fast style transfer on webcam. 
-  - Files that implement the app demo of style transfer. 
+  - [Files](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/tree/master/dashapp) that implement the app demo of style transfer. 
 
 
 
@@ -43,13 +43,14 @@ Term: Fall 2018
 > - If you want to reproduce the result of [Victoire](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/data/victoire.jpg), you have to replace `beta_model_style_1.h5` with  `beta_model_style_2.h5` everywhere in step 5. 
 > - If you want to reproduce the result of [Women at Their Toilette](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/data/Women_at_Their_%20Toilette.jpg), you have to replace `beta_model_style_1.h5` with  `beta_model_style_3.h5` everywhere in step 5. 
 > - If you want to reproduce the result of [Google Map](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/data/google_map.jpg), you have to replace `beta_model_style_1.h5` with  `beta_model_style_4.h5` everywhere in step 5. 
-* Dash app demo:  Dash app is an interactive web application developed by python. To make use of our app, 
-> - Make sure your system has all the required package.
-> - Open terminal or command line and run following command: `python Index.py`
-> - Home page shows some result of our work, including the starry night style Butler library.
-> > - Click the DIY bar of menu, and then upload your image to see the style
-> > - Click the WebCam bar of menu, and then select one of the three painting, then click start button to see the live video. Press Q to       quit the camera. You can try all of the three styles.
-> > - About page is the information of our team members.
+* Dash app demo: Dash app is an interactive web application developed by python. Our dash app project contains six python files and an assets folder with images. They are App.py, Home.py, DIY.py, WebCam.py, About.py and Index.py. To make use of our app, 
+> * Clone the dashapp folder
+> * Make sure your system has all the required package
+> * Open terminal or command line and run following command: python Index.py
+> * Home page shows some result of our work, including the starry night style bulter library.
+> > * Click the DIY bar of menu, and then upload your image to see the transfered image with starry night style
+> > * Click the WebCam bar of menu, and then select one of the three painting, then click start button to see the live video. Press Q to quit the camera. You can try all of the three styles.
+> > * About page is the information of our team member.
 
 
 
