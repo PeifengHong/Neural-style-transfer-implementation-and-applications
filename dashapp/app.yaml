@@ -1,8 +1,8 @@
 application: styletransfer-225315
-version: 1
 runtime: python
 api_version: 1
+threadsafe: true
 
 handlers:
-- url: .*
+- url: /.*
   script: Index.py
