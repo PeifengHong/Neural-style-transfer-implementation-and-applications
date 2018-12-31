@@ -17,11 +17,12 @@ Term: Fall 2018
   ![webcam](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/figs/webcam_demo.png)
   ![app demo](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/figs/page_demo.jpg)
 - Project report: [report.pdf](https://github.com/PeifengHong/Neural-style-transfer-implementation-and-applications/blob/master/report.pdf)
+- Project Demo: [See our live demo of style transfer!](https://styletransfer-225315.appspot.com)
 
 - Project environment: We implemented our code by using **TensorFlow eager execution** which is an imperative programming environment that evaluates operations immediately, without building graphs. Eager execution would be default in TensorFlow 2.0, so we use this mode to implement our code. 
 
   * Implementations: As for the implementation of one-to-one neural style transfer algorithm, we trained our model on Colab. However, as for the implementation of faster neural style transfer algorithm, we trained our model by using GCP due to the computation complexity. 
-  * App demo: We created this demo by using Dash which is a Python framework for building analytical web applications.
+  * App demo: We created [this demo](https://styletransfer-225315.appspot.com) by using Dash which is a Python framework for building analytical web applications.
 
 
 
